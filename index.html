@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./styles2.css" />
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">Love<span class="logo-color">Arrow</span></h1>
+        <p id="description">Ti siamo molto grati per il tempo che ci metti a disposizione, ci serve qualche minuto del tuo tempo per raccogliere le informazioni necessarie a migliorare l'interfaccia utente, i dati sono trattati anonimamente, per ulteriori informazioni relative al trattamento dei dati ti rimandiamo a questa pagina</p>
+        <form id="survey-form" action="">
+            <fieldset class="group1">
+                <label id="name-label">What's your name?<input name="text" id="name" placeholder="Name" required /></label>
+                <label id="email-label">Insert your email address here<input name="email" id="email" type="email" placeholder="email" required /></label>
+                <label id="number-label">How old are you?<input class="age" id="number" type="number" required min="18" max="99" placeholder="18" /></label>
+                <label id="gender">Your gender:
+                    <select name="gender" id="dropdown" placeholder="gender:">
+                        <option value="">(choose one)</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="non-binary">Non-Binary</option>
+            
+                    </select>
+                </label>
+            </fieldset> 
+            <fieldset class="group2">
+                <label class="question q1">How would you define your sexual orientation?</label>
+                    
+                        <label class="sex-or"><input type="radio" name="sex-or" value="eterosexual"id="">eterosexual</label>
+                        <label class="sex-or"><input type="radio" name="sex-or" value="omosexual" id="">omosexual</label>
+                        <label class="sex-or"><input type="radio" name="sex-or" value="bisexual" id="">bisexual</label>
+                        <label class="sex-or"><input type="radio" name="sex-or" value="asexual" id="">asexual</label>
+                        <label class="sex-or"><input type="radio" name="sex-or" value="pansexual" id="">pansexual</label>
+                        <label class="sex-or"><input type="radio" name="sex-or" value="demisexual" id="">demisexual</label>
+                    
+                <label class="question q2">What are you looking for:</label>
+                    <label for="" class="relationship-type"><input type="checkbox" value="short-term" />Short-term relationship</label>
+                    <label for="" class="relationship-type"><input type="checkbox" value="hookups" />Hookups</label>
+                    <label for="" class="relationship-type"><input type="checkbox" value="long-term" />Long-term relationship</label>
+                    <label for="" class="relationship-type"><input type="checkbox" value="friendship" />New friends</label>
+            </fieldset>
+            <fieldset class="group3">
+            <label class="question">Please if you have any suggestions watsoever let us know here!</label>
+                <textarea rows="5" cols="20" placeholder="your thoughts"></textarea>
+                <input id="submit" type="submit" value="Submit" />
+            </fieldset>
+         </form>
+    </body>
+</html>
